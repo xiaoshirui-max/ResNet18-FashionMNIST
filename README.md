@@ -11,6 +11,17 @@
 - `best_model.pth`：训练得到的最优模型参数，使用 Git LFS 存储。
 - `data/FashionMNIST/raw/`：FashionMNIST 训练集与测试集原始文件，使用 Git LFS 存储。
 
+## 克隆项目（包含数据集和模型权重）
+
+请先安装并启用 Git LFS，再克隆仓库：
+
+```bash
+git lfs install
+git clone https://github.com/xiaoshirui-max/ResNet18-FashionMNIST.git
+cd ResNet18-FashionMNIST
+git lfs pull
+```
+
 ## 安装依赖
 
 ```bash
