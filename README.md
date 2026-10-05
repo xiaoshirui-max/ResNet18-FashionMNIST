@@ -9,6 +9,7 @@
 - `Model_Test.py`：加载最优权重并在测试集上计算准确率、输出预测结果。
 - `Test.py`：PyTorch 与 CUDA 环境检查。
 - `best_model.pth`：训练得到的最优模型参数，使用 Git LFS 存储。
+- `data/FashionMNIST/raw/`：FashionMNIST 训练集与测试集原始文件，使用 Git LFS 存储。
 
 ## 安装依赖
 
@@ -22,7 +23,7 @@ pip install -r requirements.txt
 python Model_Train.py
 ```
 
-训练数据会自动下载到 `data/`，该目录不会提交到 GitHub。训练结束后，最优参数保存为 `best_model.pth`。
+仓库已经包含 FashionMNIST 数据集；如果数据文件缺失，`download=True` 仍会自动重新下载。训练结束后，最优参数保存为 `best_model.pth`。
 
 ## 测试模型
 
