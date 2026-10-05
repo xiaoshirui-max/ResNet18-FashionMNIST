@@ -11,6 +11,23 @@
 - `best_model.pth`：训练得到的最优模型参数，使用 Git LFS 存储。
 - `data/FashionMNIST/raw/`：FashionMNIST 训练集与测试集原始文件，使用 Git LFS 存储。
 
+## 已验证的运行环境
+
+| 组件 | 版本或型号 |
+| --- | --- |
+| Python | 3.12.15（Anaconda） |
+| PyTorch | 2.14.1+cu130 |
+| Torchvision | 0.29.1+cu130 |
+| PyTorch CUDA | 13.0 |
+| GPU | NVIDIA GeForce RTX 5070 |
+| NumPy | 2.5.2 |
+| Pandas | 3.0.6 |
+| Matplotlib | 3.11.2 |
+| Scikit-learn | 1.9.1 |
+| SciPy | 1.18.1 |
+
+该环境已通过 `Test.py` 验证，CUDA 可用，并成功在 `cuda:0` 上完成 GPU 张量运算。
+
 ## 克隆项目（包含数据集和模型权重）
 
 请先安装并启用 Git LFS，再克隆仓库：
